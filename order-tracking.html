@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Dõi Đơn Hàng - Mixue</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="TrangChu.html"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a>
+        </div>
+        <nav>
+    <ul>
+        <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+        <li><a href="admin.html" class="active">QUẢN LÝ</a></li>
+        <li><a href="order-tracking.html">THEO DÕI ĐƠN</a></li>
+        <li><a href="loyalty.html">TÍCH ĐIỂM</a></li>
+        <!-- THÊM SEARCH BOX -->
+        <div class="search">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            <input type="text" id="search-box" placeholder="Search...">
+        </div>
+        <div class="cart">
+            <a href="cart-items.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </ul>
+</nav>
+
+<!-- THÊM SEARCH RESULTS CONTAINER -->
+<div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+</div>
+    </header>
+
+    <main>
+    <div class="tracking-container">
+        <div class="tracking-header fade-in">
+            <h1>🚚 Theo Dõi Đơn Hàng</h1>
+            <p>Biết chính xác vị trí đơn hàng của bạn trong thời gian thực</p>
+        </div>
+        
+        <div class="tracking-card slide-up">
+            <div class="tracking-search">
+                <input type="text" id="order-id-input" placeholder="🔍 Nhập mã đơn hàng của bạn...">
+                <button id="track-order-btn">Theo dõi Ngay</button>
+            </div>
+
+            <div id="tracking-result" class="tracking-result" style="display: none;">
+                <!-- Tracking results will appear here -->
+            </div>
+        </div>
+
+        <div class="tracking-card fade-in">
+            <h2 style="color: #2c3e50; margin-bottom: 30px;">📋 Đơn Hàng Gần Đây</h2>
+            <div id="user-orders-list" class="orders-grid">
+                <!-- Recent orders will appear here -->
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="cards-grid">
+            <div class="feature-card glass-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Theo dõi Thời gian Thực</h3>
+                <p>Cập nhật vị trí đơn hàng mỗi 5 phút</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">📞</div>
+                <h3>Thông báo Tự động</h3>
+                <p>Nhận thông báo khi đơn hàng thay đổi trạng thái</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>Bản đồ Theo dõi</h3>
+                <p>Xem lộ trình giao hàng trực quan trên bản đồ</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script src="main.js"></script>
+    <script src="order-tracking.js"></script>
+</body>
+</html>

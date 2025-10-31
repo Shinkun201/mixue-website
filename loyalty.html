@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tích Điểm Thành Viên - Mixue</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="TrangChu.html"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a>
+        </div>
+        <nav>
+    <ul>
+        <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+        <li><a href="admin.html" class="active">QUẢN LÝ</a></li>
+        <li><a href="order-tracking.html">THEO DÕI ĐƠN</a></li>
+        <li><a href="loyalty.html">TÍCH ĐIỂM</a></li>
+        <!-- THÊM SEARCH BOX -->
+        <div class="search">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            <input type="text" id="search-box" placeholder="Search...">
+        </div>
+        <div class="cart">
+            <a href="cart-items.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </ul>
+</nav>
+
+<!-- THÊM SEARCH RESULTS CONTAINER -->
+<div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+</div>
+    </header>
+
+    <main>
+    <div class="loyalty-container">
+        <div class="loyalty-header fade-in">
+            <h1>🎁 Chương Trình Thành Viên Vàng</h1>
+            <p>Tích điểm - Đổi quà - Nhận ưu đãi đặc biệt</p>
+        </div>
+        
+        <div class="loyalty-card slide-up">
+            <div class="points-display">
+                <h2>Điểm Tích Lũy Của Bạn</h2>
+                <div class="points-count" id="points-count">156</div>
+                <p>Cứ 10,000đ = 1 điểm tích lũy • <strong>156 điểm hiện có</strong></p>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 65%"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <small>Đồng: 0 điểm</small>
+                    <small>Bạc: 100 điểm</small>
+                    <small>Vàng: 200 điểm</small>
+                    <small>Kim cương: 500 điểm</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="loyalty-card fade-in">
+            <h2 style="text-align: center; margin-bottom: 30px;">🎯 Phần Thưởng Đặc Biệt</h2>
+            <div class="rewards-grid" id="rewards-grid">
+                <!-- Rewards will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="cards-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎉</div>
+                <h3>Quà Tặng Sinh Nhật</h3>
+                <p>Nhận 1 ly trà sữa MIỄN PHÍ vào ngày sinh nhật</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Ưu tiên Đặt hàng</h3>
+                <p>Đơn hàng được xử lý ưu tiên, giao hàng nhanh hơn</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎁</div>
+                <h3>Quà Tặng Đặc Biệt</h3>
+                <p>Nhận các phần quà bất ngờ theo mùa và sự kiện</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script src="main.js"></script>
+    <script src="loyalty.js"></script>
+</body>
+</html>

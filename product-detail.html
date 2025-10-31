@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-detail-title">Chi tiết sản phẩm Mixue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- ĐÃ SỬA: Thay style.css bằng main.css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <a href="TrangChu.html"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a> <nav>
+            <ul>
+                <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+                <li><a href="menu.html">MENU MIXUE</a></li>
+                <li><a href="kemmixue.html">KEM MIXUE</a></li>
+                <li><a href="trasuamixue.html">TRÀ SỮA MIXUE</a></li>
+                <li><a href="#">MIXUE GẦN ĐÂY</a></li>
+                <li><a href="#">MIXUE TUYỂN DỤNG</a></li>
+                <li><a href="#">NHƯỢNG QUYỀN MIXUE</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <div class="search">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <input type="text" id="search-box" placeholder="Search...">
+                </div>
+                <div class="cart">
+                    <a href="cart-items.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-item-count" class="cart-count">0</span> </a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+ <!-- THÊM PHẦN NÀY - SEARCH RESULTS CONTAINER -->
+  <div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+  </div>
+
+</header>
+
+    <main>
+        <div class="product-detail-page">
+            <div class="product-detail-left">
+                <img src="" alt="" id="product-image">
+            </div>
+            <div class="product-detail-right">
+                <h1 id="product-name"></h1>
+                <p class="product-price-info">
+                    <span class="price-value" id="product-price"></span> + Free Shipping
+                </p>
+                <p class="product-description" id="product-description"></p>
+                <p><a href="menu.html">Xem Menu Mixue</a></p>
+                <div class="product-actions">
+                    <input type="number" value="1" min="1" id="product-quantity">
+                    <button id="add-to-cart-detail-btn">ADD TO CART</button>
+                </div>
+                <div class="product-meta">
+                    <p>Category: <span id="product-category"></span></p> </div>
+                </div>
+            </div>
+
+           <div class="reviews-section">
+    <h2>Reviews</h2>
+    <div id="submitted-reviews">
+        <!-- Review gửi sẽ được chèn vào đây -->
+        <p>There are no reviews yet.</p>
+    </div>
+
+                <div class="review-form-container">
+                    <h3 id="review-form-title">Be the first to review</h3>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <label for="your-rating">Your rating *</label>
+                    <div class="rating-stars" id="product-rating-stars">
+                        <i class="fa-regular fa-star" data-rating="1"></i>
+                        <i class="fa-regular fa-star" data-rating="2"></i>
+                        <i class="fa-regular fa-star" data-rating="3"></i>
+                        <i class="fa-regular fa-star" data-rating="4"></i>
+                        <i class="fa-regular fa-star" data-rating="5"></i>
+                    </div>
+                    <label for="your-review">Your review *</label>
+                    <textarea id="your-review" rows="5" required></textarea>
+
+                    <label for="your-name">Name *</label>
+                    <input type="text" id="your-name" required>
+
+                    <label for="your-email">Email *</label>
+                    <input type="email" id="your-email" required>
+
+                    <button id="submit-review-btn" type="submit">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="phantren">
+            <div class="tren1">
+                <h4>VỀ CHÚNG TÔI</h4>
+                <div class="abt-footer">
+                    <p>Chào mừng đến với Mixue! Chúng tôi tự hào mang đến cho bạn những món kem và thức uống giải khát tuyệt vời, được chế biến từ những nguyên liệu tươi ngon nhất. Với hương vị độc đáo và giá cả phải chăng, Mixue là điểm đến lý tưởng để bạn tận hưởng những khoảnh khắc ngọt ngào cùng bạn bè và gia đình.</p>
+                    <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                    <p>Điện thoại: 0123 456 789</p>
+                    <p>Email: <a href="mailto:info@mixue.com">info@mixue.com</a></p>
+                </div>
+            </div>
+            <div class="tren2">
+                <h4>LIÊN KẾT NHANH</h4>
+                <ul>
+                    <li><a href="TrangChu.html">Trang chủ</a></li>
+                    <li><a href="menu.html">Sản phẩm</a></li>
+                    <li><a href="#">Đánh giá</a></li>
+                    <li><a href="cart-items.html">Đặt hàng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="tren3">
+                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="social">
+                    <p><a href="#"><i class="fab fa-facebook"></i> Facebook</a></p>
+                    <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
+                    <p><a href="#"><i class="fab fa-youtube"></i> YouTube</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="phanduoi">
+            <p>&copy; 2024 Mixue. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- ĐÃ SỬA: Thay 4 file JS bằng 1 file main.js -->
+    <script src="main.js"></script>
+</body>
+</html>

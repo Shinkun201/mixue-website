@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Mixue</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="TrangChu.html"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a>
+        </div>
+        <nav>
+    <ul>
+        <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+        <li><a href="admin.html" class="active">QUẢN LÝ</a></li>
+        <li><a href="order-tracking.html">THEO DÕI ĐƠN</a></li>
+        <li><a href="loyalty.html">TÍCH ĐIỂM</a></li>
+        <!-- THÊM SEARCH BOX -->
+        <div class="search">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            <input type="text" id="search-box" placeholder="Search...">
+        </div>
+        <div class="cart">
+            <a href="cart-items.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </ul>
+</nav>
+
+<!-- THÊM SEARCH RESULTS CONTAINER -->
+<div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+</div>
+    </header>
+
+    <main>
+    <div class="admin-container">
+        <div class="admin-header fade-in">
+            <h1>🚀 Dashboard Quản Lý</h1>
+            <p>Quản lý toàn diện hệ thống Mixue của bạn</p>
+        </div>
+        
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card slide-up">
+                <div class="stat-icon">📊</div>
+                <h3>Tổng Đơn Hàng</h3>
+                <div class="stat-number" id="total-orders">127</div>
+                <div class="stat-change">+12% so với tháng trước</div>
+            </div>
+            <div class="stat-card slide-up">
+                <div class="stat-icon">💰</div>
+                <h3>Doanh Thu Hôm Nay</h3>
+                <div class="stat-number" id="today-revenue">8.5M</div>
+                <div class="stat-change">+5.2% so với hôm qua</div>
+            </div>
+            <div class="stat-card slide-up">
+                <div class="stat-icon">📦</div>
+                <h3>Đơn Hôm Nay</h3>
+                <div class="stat-number" id="today-orders">23</div>
+                <div class="stat-change">3 đơn đang chờ xử lý</div>
+            </div>
+            <div class="stat-card slide-up">
+                <div class="stat-icon">👥</div>
+                <h3>Khách Hàng</h3>
+                <div class="stat-number" id="total-customers">892</div>
+                <div class="stat-change">+45 khách hàng mới</div>
+            </div>
+        </div>
+
+        <div class="admin-sections">
+            <!-- Left Column -->
+            <div class="section fade-in">
+                <div class="section-header">
+                    <h2>📦 Đơn Hàng Mới Nhất</h2>
+                    <a href="#" class="view-all">Xem tất cả</a>
+                </div>
+                <div id="recent-orders" class="orders-list">
+                    <!-- Orders will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="section fade-in">
+                <h2>🏆 Sản Phẩm Phổ Biến</h2>
+                <div id="popular-products" class="products-list">
+                    <!-- Products will be populated by JavaScript -->
+                </div>
+                
+                <div class="feature-card" style="margin-top: 20px;">
+                    <div class="feature-icon">📈</div>
+                    <h3>Phân tích Hiệu suất</h3>
+                    <p>Theo dõi hiệu suất bán hàng theo thời gian thực</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Features Grid -->
+        <div class="cards-grid">
+            <div class="feature-card slide-up">
+                <div class="feature-icon">🛒</div>
+                <h3>Quản lý Tồn kho</h3>
+                <p>Theo dõi và quản lý nguyên liệu tồn kho</p>
+            </div>
+            <div class="feature-card slide-up">
+                <div class="feature-icon">📱</div>
+                <h3>Đơn hàng Online</h3>
+                <p>Quản lý đơn hàng từ website và ứng dụng</p>
+            </div>
+            <div class="feature-card slide-up">
+                <div class="feature-icon">💬</div>
+                <h3>Phản hồi Khách hàng</h3>
+                <p>Theo dõi đánh giá và phản hồi từ khách hàng</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <script src="main.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

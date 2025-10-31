@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="image/mixue-title.png" type="image/icon">
+  <title>Mixue Việt Nam</title>
+  <!-- ĐÃ SỬA: Thay 2 file CSS bằng 1 file main.css -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <a href="#"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+          <li><a href="menu.html">MENU MIXUE</a></li>
+          <li><a href="kemmixue.html">KEM MIXUE</a></li>
+          <li><a href="trasuamixue.html">TRÀ SỮA MIXUE</a></li>
+          <li><a href="#">MIXUE GẦN ĐÂY</a></li>
+          <li><a href="#">MIXUE TUYỂN DỤNG</a></li>
+          <li><a href="#">NHƯỢNG QUYỀN MIXUE</a></li>
+          <li><a href="#">LIÊN HỆ</a></li>
+          <div class="search">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            <input type="text" id="search-box" placeholder="Search...">
+          </div>
+          <div class="cart">
+            <a href="cart-items.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- THÊM PHẦN NÀY - SEARCH RESULTS CONTAINER -->
+  <div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+  </div> 
+
+  <main>
+    <section class="BigMenu">
+        <section class="Menu">
+            <h5 class="menu-titles">Menu Mixue Mới Nhất Cập Nhật Từ Mixue 2025 - Mixue Việt Nam</h5>
+            <p>Menu Mixue Cập nhật thông tin tên sản phẩm, giá, topping, mô tả các sản phẩm của Mixue</p>
+            <div class="all-menu">
+          <div class="abt-menu">
+            <a href="#"><img src="image/menu1.jpg" width="90%" alt=""></a> 
+            <p class="menu-mota"><a href="menu.html">Menu Mixue</a> rất đa dạng món giá thành phải chăng, 
+              đồ uống ngon là một sự lựa chọn tuyệt vời giữa cho bạn. Món nhiều người thích nhất tại Mixue
+              là  trà sữa, được pha chế từ trà tươi và các nguyên liệu cao cấp như sữa tươi, 
+              kem, trái cây tươi, nước ép, matcha và hạt trân châu.</p>               
+            <p class="menu-mota">Ngoài trà sữa, Mixue còn có các sản phẩm kem và trà hoa quả, với nhiều hương
+               vị đa dạng.Giá thành các món trong Menu của Mixue thường giao động từ 15-30k rất phù hợp cho tất cả mọi người.</p>
+           </div>
+        </div>
+        </section>
+    </section>
+
+    <!-- Menu -->
+    <section class="Menu" id="kem-menu">
+    <h5>Kem Mixue</h5>
+    <div class="all-products">
+        <div class="product-list" id="kem-product-list">
+            </div>
+    </div>
+</section>
+    <section class="Menu" id="trasua-menu">
+    <h5>Trà Sữa Mixue</h5>
+    <div class="all-products">
+        <div class="product-list" id="trasua-product-list">
+            </div>
+    </div>
+</section>
+    <section>
+      <div class="rates-danhgia">
+      <h5>Cảm Nhận Của Khách Hàng</h5>
+      <div class="vungdanhgia">
+          <div class="danhgia">
+              <p class="nhanxet">Kem Mixue rất ngon, có vị béo của sữa ông thọ vị thanh ngọt của sữa tươi, không ngọt gắt như mấy kem khác. Bánh của kem cũng ngon, giòn. Chỗ này không có bảo vệ giữ xe nha. Bên trong có máy lạnh với quạt rất thoáng mát.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+              <p class="khachhang"> Chị Ngọc, Quận 1</p>
+              <img class="danhgia-anh" src="image/danhgia1.png" alt="">
+          </div>
+          <div class="danhgia">
+              <p class="nhanxet">Quán sạch sẽ thơm mát không gian dễ chịu học bài học nhóm thoải mái, ngồi chơi cũng thoải mái, nhân viên cuti, chịuuu nha 10₫</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>                
+              <p class="khachhang">Anh Tuấn, Quận 3</p>
+              <img class="danhgia-anh" src="image/danhgia2.png" alt="">
+          </div>
+          <div class="danhgia">
+              <p class="nhanxet">Khâu chế biến sạch sẽ, có chỗ ngồi, máy lạnh, đồ ăn, uống ở mức trung bình, rẻ, phù hợp với sinh viên học sinh, buổi sáng các bạn nhân viên khá bận rộn, kem buổi sáng có thể bị tắc, chờ 15p là oke ^^.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span> 
+              <p class="khachhang">Chị Hương, Quận 10</p>
+              <img class="danhgia-anh" src="image/danhgia3.png" alt="">
+          </div>
+      </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <div class="phantren">
+    <div class="tren1">
+        <a href="TrangChu.html"><img src="image/MixueLogo.png" alt=""></a>
+        <p class="abt-footer"><a href="TrangChu.html">Mixue </a>là công ty khá nổi tiếng trong ngành F&B ở Việt Nam về nhượng quyền chuyên bán kem mixue, trà sữa mixue và đồ uống trà từ Trịnh Châu, Hà Nam, Trung Quốc và được thành lập vào tháng 6 năm 1997. Hiện nay Mixue có hơn 20.000 cửa hàng Mixue trải dài khắp thế giới.</p>
+       <p class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>                  
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </p>
+    </div>
+    <div class="tren2">
+        <h3>Các sản phẩm Mixue</h3>
+        <a href="kemmixue.html"><p>Kem Mixue</p></a>
+        <a href="trasuamixue.html"><p>Trà Sữa Mixue</p></a>
+        <a href="#"><p>Trà Mixue</p></a>
+        <a href="menu.html"><p>Các món nước</p></a>
+    </div>
+    <div class="tren3">
+      <h3>Liên Kết</h3>
+        <a href="TrangChu.html"><p>Mixue Việt Nam</p></a>
+        <a href="menu.html"><p>Menu Mixue</p></a>
+        <a href="#"><p>Nhượng quyền Mixue</p></a>
+        <a href="#"><p>Liên Hệ</p></a>
+  </div>
+  </div>
+<div class="phanduoi">
+    <p>Copyright © 2025 | Mixue Việt Nam</p>
+    <p>Powered By Mixue Việt Nam</p>
+</div>
+  </footer>
+
+  <!-- ĐÃ SỬA: Thay script.js bằng main.js -->
+  <script src="main.js"></script>
+</body>
+</html>

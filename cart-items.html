@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Giỏ Hàng của bạn - Mixue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ĐÃ SỬA: Thay style.css và cart.css bằng main.css -->
+    <link rel="stylesheet" href="main.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="TrangChu.html"><img class="logo" src="image/MixueLogo.png" alt="Mixue Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="TrangChu.html">TRANG CHỦ</a></li>
+                    <li><a href="menu.html">MENU MIXUE</a></li>
+                    <li><a href="kemmixue.html">KEM MIXUE</a></li>
+                    <li><a href="trasuamixue.html">TRÀ SỮA MIXUE</a></li>
+                    <li><a href="#">MIXUE GẦN ĐÂY</a></li>
+                    <li><a href="#">MIXUE TUYỂN DỤNG</a></li>
+                    <li><a href="#">NHƯỢNG QUYỀN MIXUE</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                    <div class="search">
+                        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                        <input type="text" id="search-box" placeholder="Search...">
+                    </div>
+                    <div class="cart">
+                        <a href="cart-items.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-item-count" class="cart-count">0</span> </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+ <!-- THÊM PHẦN NÀY - SEARCH RESULTS CONTAINER -->
+  <div class="search-results" id="search-results" style="display: none;">
+    <h5>Kết quả tìm kiếm</h5>
+    <div class="product-list" id="search-product-list"></div>
+    <p id="no-results-message" style="display: none;">Không tìm thấy sản phẩm nào.</p>
+  </div>
+
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h1>Giỏ hàng của bạn</h1>
+            <p id="empty-cart-message" class="empty-cart-message" style="display: none;">Giỏ hàng của bạn đang trống!</p>
+
+            <table id="cart-table"> <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    </tbody>
+            </table>
+            
+            <div id="cart-summary" class="cart-summary" style="display: none;">
+                <div class="cart-total">
+                    Tổng cộng: <span id="total-price">0</span>
+                </div>
+                <button id="thanhtoan">Mua ngay</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="phantren">
+            <div class="tren1">
+                <a href="TrangChu.html"><img src="image/MixueLogo.png" alt=""></a>
+                <p class="abt-footer">
+                    <a href="TrangChu.html">Mixue </a>là công ty khá nổi tiếng trong ngành F&B ở Việt Nam <br> về nhượng quyền chuyên bán kem mixue, trà sữa mixue và đồ uống trà từ Trịnh Châu, Hà Nam, Trung Quốc và được thành lập vào tháng 6 năm 1997. Hiện nay Mixue có hơn 20.000 cửa hàng Mixue trải dài khắp thế giới.
+                </p>
+                <p class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </p>
+            </div>
+            <div class="tren2">
+                <h3>Các sản phẩm Mixue</h3>
+                <a href="kemmixue.html"><p>Kem Mixue</p></a>
+                <a href="trasuamixue.html"><p>Trà Sữa Mixue</p></a>
+                <a href="#"><p>Trà Mixue</p></a>
+                <a href="menu.html"><p>Các món nước</p></a>
+            </div>
+            <div class="tren3">
+                <h3>Liên Kết</h3>
+                <a href="TrangChu.html"><p>Mixue Việt Nam</p></a>
+                <a href="menu.html"><p>Menu Mixue</p></a>
+                <a href="#"><p>Nhượng quyền Mixue</p></a>
+                <a href="#"><p>Liên Hệ</p></a>
+            </div>
+        </div>
+        <div class="phanduoi">
+            <p>Copyright © 2025 | Mixue Việt Nam</p>
+            <p>Powered By Mixue Việt Nam</p>
+        </div>
+    </footer>
+    
+    <!-- ĐÃ SỬA: Thay 4 file JS bằng 1 file main.js -->
+    <script src="main.js"></script>
+    <script src="cart-page.js"></script>
+</body>
+</html>
